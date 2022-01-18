@@ -1,0 +1,123 @@
+/* ============
+|common css
+============= */
+
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ============
+|Header css
+============= */
+
+header {
+  background-color: #0c0d0e;
+}
+.logo_area {
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 2;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 2;
+}
+
+.inner_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 21px;
+  position: relative;
+}
+
+nav ul li a {
+  transition: 0.3s;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav ul li:hover a {
+  color: rgb(132, 198, 236);
+}
+
+nav ul li:hover ul li a {
+  color: rgb(24, 22, 22);
+}
+
+/*==============
+| drop-down css
+===============*/
+
+nav ul ul {
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(167, 167, 167);
+  left: -9999px;
+  /* left: 0; */
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px 0;
+}
+nav ul li:hover ul {
+  left: 0px;
+}
+
+nav ul ul li {
+  padding: 5px 15px;
+}
+
+nav ul ul li:hover {
+  background-color: rgb(132, 198, 236);
+}
+
+nav ul ul ul {
+  left: 150px;
+  top: -15px;
+}
+
+nav ul li:hover ul ul {
+  left: -9999px;
+}
+
+nav ul ul li:hover ul {
+  left: 150px;
+}
+
+nav ul ul li:hover ul Ul {
+  left: -9999px;
+}
+
+nav ul li ul li ul li:hover ul {
+  left: 150px;
+  top: -15px;
+}
